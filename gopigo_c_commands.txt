@@ -1,0 +1,62 @@
+init()
+
+*write_block(char cmd, char v1, char v2, char v3)
+*read_byte()
+
+volt() - returns voltage
+fwd()
+stop()
+pi_sleep(int t)
+
+*motor1(int direction, int speed)
+*motor2(int direction, int speed)
+*motor_fwd()
+*motor_bwd()
+
+bwd()
+left()
+left_rot()
+right()
+right_rot()
+
+increase_speed()
+decrease_speed()
+
+trim_test(int value)
+trim_read()
+trim_write(int value)
+
+digitalRead(int pin)
+digitalWrite(int pin, int value)
+pinMode(int pin, char *mode)
+analogRead(int pin)
+analogWrite(int pin, int value)
+
+brd_rev()
+us_dist(int pin) - pin 15 (A1) returned in cm
+
+read_motor_speed(unsigned char* speed)
+led_toggle(int l_id, bool onoff) - l_id: 1 for left LED & 0 for right LED
+                                   onoff: 0 off, 1 on
+
+led_on(int l_id)
+led_off(l_id)
+
+servo(int position)
+fw_ver()
+set_left_speed(int speed)  speed - 0 to 255
+set_right_speed(int speed)
+*set_speed(int speed)
+enc_read(int motor)
+enable_encoders()
+disable_encoders()
+
+enc_tgt(int m1, int m2, int target)
+				m1: 0 to disable targeting for m1, 1 to enable it
+				m2: 0 to disable targeting for m2, 1 to enable it
+				target: number of encoder pulses to target (18 per revolution)
+
+read_enc_status()
+read_timeout_status()
+
+
